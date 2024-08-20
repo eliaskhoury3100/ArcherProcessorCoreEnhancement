@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="archer_rv321_single_cycle_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="archer_rv321_single_cycle_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="390.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="550.401 ns"></ZoomEndTime>
+      <Cursor1Time time="460.400 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="170"></NameColumnWidth>
+      <ValueColumnWidth column_width="78"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/archer_rv321_single_cycle_tb/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/archer_rv321_single_cycle_tb/tb_clk" type="logic">
+      <obj_property name="ElementShortName">tb_clk</obj_property>
+      <obj_property name="ObjectShortName">tb_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/archer_rv321_single_cycle_tb/tb_rst_n" type="logic">
+      <obj_property name="ElementShortName">tb_rst_n</obj_property>
+      <obj_property name="ObjectShortName">tb_rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/archer_rv321_single_cycle_tb/tb_imem_addr" type="array">
+      <obj_property name="ElementShortName">tb_imem_addr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_imem_addr[9:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/archer_rv321_single_cycle_tb/tb_imem_dataout" type="array">
+      <obj_property name="ElementShortName">tb_imem_dataout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_imem_dataout[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/archer_rv321_single_cycle_tb/tb_dmem_addr" type="array">
+      <obj_property name="ElementShortName">tb_dmem_addr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_dmem_addr[9:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/archer_rv321_single_cycle_tb/tb_dmem_datain" type="array">
+      <obj_property name="ElementShortName">tb_dmem_datain[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_dmem_datain[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/archer_rv321_single_cycle_tb/tb_dmem_dataout" type="array">
+      <obj_property name="ElementShortName">tb_dmem_dataout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_dmem_dataout[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/archer_rv321_single_cycle_tb/tb_dmem_wen" type="logic">
+      <obj_property name="ElementShortName">tb_dmem_wen</obj_property>
+      <obj_property name="ObjectShortName">tb_dmem_wen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/archer_rv321_single_cycle_tb/tb_dmem_ben" type="array">
+      <obj_property name="ElementShortName">tb_dmem_ben[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_dmem_ben[3:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/archer_rv321_single_cycle_tb/tb_value_out" type="array">
+      <obj_property name="ElementShortName">tb_value_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_value_out[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/archer_rv321_single_cycle_tb/tb_in1" type="array">
+      <obj_property name="ElementShortName">tb_in1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_in1[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/archer_rv321_single_cycle_tb/tb_in2" type="array">
+      <obj_property name="ElementShortName">tb_in2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">tb_in2[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

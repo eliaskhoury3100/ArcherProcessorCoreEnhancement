@@ -1,0 +1,78 @@
+`timescale 1ns / 1ps
+
+module mul_div(
+        input [31:0] inputA,
+        input [31:0] inputB,
+        input [2:0] operation, 
+        output reg [31:0] result,
+        output reg div_zero,
+        output reg div_overflow
+    );
+    
+    wire [31:0] mul_result;
+    wire [31:0] mulh_result;
+    wire [31:0] mulhu_result;
+    wire [31:0] mulhsu_result;
+    wire [31:0] div_result;
+    wire [31:0] divu_result;
+    wire [31:0] rem_result;
+    wire [31:0] remu_result;
+    wire [63:0] intermediate1;
+    wire [63:0] intermediate2;
+    wire [63:0] intermediate3;
+
+    assign intermediate1=($signed(inputA))*($signed(inputB));
+    assign mul_result= intermediate1[31:0];
+    assign mulh_result= intermediate1[63:32];
+    assign intermediate2=($unsigned(inputA))*($unsigned(inputB));
+    assign mulhu_result= intermediate2[63:32];
+    assign intermediate3=($signed(inputA))*($unsigned(inputB));   
+    assign mulhsu_result= intermediate3[63:32];
+    assign div_result= (inputB==0)? (32'hFFFFFFFF): //case of division by zero for div
+                       ((inputB==32'hFFFFFFFF)&&(inputA==32'b10000000000000000000000000000000))? (inputA): //case of overflow for div
+      $signed(($signed(inputA))/($signed(inputB)));//normal case for div
+    assign divu_result= (inputB==0)? (32'hFFFFFFFF) : //case of division by zero for divu
+                        ($unsigned(inputA))/($unsigned(inputB)); ///normal case for divu
+    assign rem_result= (inputB==0)? (inputA): //case of division by zero for rem
+                       ((inputB==32'hFFFFFFFF)&&(inputA==32'b10000000000000000000000000000000))? (0): //case of overflow for rem
+      $signed(($signed(inputA))%($signed(inputB))); //normal case for rem
+    assign remu_result= (inputB==0)? (inputA): //case of division by zero for remu
+                        ($unsigned(inputA))%($unsigned(inputB)); //normal case for remu
+                        
+    assign div_z= (inputB==0)? 1'b1 : 1'b0;
+    assign div_overf= ((inputB==32'hFFFFFFFF)&&(inputA==32'b10000000000000000000000000000000))? 1'b1: 1'b0;
+
+
+    always@(*)
+        begin 
+            case(operation)
+                3'b000: result= mul_result;   
+                3'b001: result= mulh_result;
+                3'b010: result= mulhsu_result;
+                3'b011: result= mulhu_result;
+                3'b100:
+                    begin
+                        result= div_result;
+                        div_zero=div_z;
+			div_overflow=div_overf;
+                    end
+                3'b101:
+                    begin
+                        result= divu_result;
+                        div_zero= div_z;
+                    end
+                3'b110:
+                    begin
+                        result= rem_result;
+                        div_zero= div_z;
+			div_overflow=div_overf;
+                    end
+                3'b111:
+                    begin
+                        result= remu_result;
+                        div_zero= div_z;
+                    end
+            endcase
+        end
+
+endmodule

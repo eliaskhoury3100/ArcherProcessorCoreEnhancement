@@ -1,0 +1,21 @@
+0.7
+2020.2
+May  7 2023
+15:24:31
+X:/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1683266558,verilog,,,,glbl,,,,,,,,
+X:/project_1/project_1.srcs/sim_1/imports/verilog/archer_rv32i_single_cycle_tb.v,1714396825,verilog,,,,archer_rv321_single_cycle_tb,,,,,,,,
+X:/project_1/project_1.srcs/sources_1/imports/verilog/add4.v,1713463204,verilog,,X:/project_1/project_1.srcs/sources_1/imports/verilog/alu.v,X:/project_1/project_1.srcs/sources_1/imports/verilog/archerdefs.v,add4,,,,,,,,
+X:/project_1/project_1.srcs/sources_1/imports/verilog/alu.v,1713383144,verilog,,X:/project_1/project_1.srcs/sources_1/new/alu_muldiv_mux2to1.v,X:/project_1/project_1.srcs/sources_1/imports/verilog/archerdefs.v,alu,,,,,,,,
+X:/project_1/project_1.srcs/sources_1/imports/verilog/archer_rv32i_single_cycle.v,1714396811,verilog,,X:/project_1/project_1.srcs/sources_1/imports/verilog/branch_cmp.v,X:/project_1/project_1.srcs/sources_1/imports/verilog/archerdefs.v,archer_rv32i_single_cycle,,,,,,,,
+X:/project_1/project_1.srcs/sources_1/imports/verilog/archerdefs.v,1713382724,verilog,,,,,,,,,,,,
+X:/project_1/project_1.srcs/sources_1/imports/verilog/branch_cmp.v,1713383198,verilog,,X:/project_1/project_1.srcs/sources_1/imports/verilog/control.v,X:/project_1/project_1.srcs/sources_1/imports/verilog/archerdefs.v,branch_cmp,,,,,,,,
+X:/project_1/project_1.srcs/sources_1/imports/verilog/control.v,1714250151,verilog,,X:/project_1/project_1.srcs/sources_1/imports/verilog/immgen.v,X:/project_1/project_1.srcs/sources_1/imports/verilog/archerdefs.v,control,,,,,,,,
+X:/project_1/project_1.srcs/sources_1/imports/verilog/immgen.v,1713384728,verilog,,X:/project_1/project_1.srcs/sources_1/imports/verilog/lmb.v,X:/project_1/project_1.srcs/sources_1/imports/verilog/archerdefs.v,immgen,,,,,,,,
+X:/project_1/project_1.srcs/sources_1/imports/verilog/lmb.v,1713384076,verilog,,X:/project_1/project_1.srcs/sources_1/new/mul_div.v,X:/project_1/project_1.srcs/sources_1/imports/verilog/archerdefs.v,lmb,,,,,,,,
+X:/project_1/project_1.srcs/sources_1/imports/verilog/mux2to1.v,1713384126,verilog,,X:/project_1/project_1.srcs/sources_1/imports/verilog/pc.v,X:/project_1/project_1.srcs/sources_1/imports/verilog/archerdefs.v,mux2to1,,,,,,,,
+X:/project_1/project_1.srcs/sources_1/imports/verilog/pc.v,1713463220,verilog,,X:/project_1/project_1.srcs/sources_1/imports/verilog/regfile.v,X:/project_1/project_1.srcs/sources_1/imports/verilog/archerdefs.v,pc,,,,,,,,
+X:/project_1/project_1.srcs/sources_1/imports/verilog/regfile.v,1713561112,verilog,,X:/project_1/project_1.srcs/sources_1/imports/verilog/rom.v,X:/project_1/project_1.srcs/sources_1/imports/verilog/archerdefs.v,regfile,,,,,,,,
+X:/project_1/project_1.srcs/sources_1/imports/verilog/rom.v,1714395050,verilog,,X:/project_1/project_1.srcs/sources_1/imports/verilog/sram.v,X:/project_1/project_1.srcs/sources_1/imports/verilog/archerdefs.v,rom,,,,,,,,
+X:/project_1/project_1.srcs/sources_1/imports/verilog/sram.v,1713558380,verilog,,X:/project_1/project_1.srcs/sim_1/imports/verilog/archer_rv32i_single_cycle_tb.v,X:/project_1/project_1.srcs/sources_1/imports/verilog/archerdefs.v,sram,,,,,,,,
+X:/project_1/project_1.srcs/sources_1/new/alu_muldiv_mux2to1.v,1714199628,verilog,,X:/project_1/project_1.srcs/sources_1/imports/verilog/archer_rv32i_single_cycle.v,,alu_muldiv_mux2to1,,,,,,,,
+X:/project_1/project_1.srcs/sources_1/new/mul_div.v,1714458135,verilog,,X:/project_1/project_1.srcs/sources_1/imports/verilog/mux2to1.v,,mul_div,,,,,,,,

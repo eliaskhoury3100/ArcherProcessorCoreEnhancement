@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Apr 30 07:27:04 2024
+# Process ID: 9548
+# Current directory: X:/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent568 X:\project_1\project_1.xpr
+# Log file: X:/project_1/vivado.log
+# Journal file: X:/project_1\vivado.jou
+# Running On: VLS000057137L, OS: Windows, CPU Frequency: 3592 MHz, CPU Physical cores: 4, Host memory: 16963 MB
+#-----------------------------------------------------------
+start_gui
+open_project X:/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config X:/project_1/archer_rv321_single_cycle_tb_behav.wcfg
+source archer_rv321_single_cycle_tb.tcl
+close_sim
+launch_simulation
+open_wave_config X:/project_1/archer_rv321_single_cycle_tb_behav.wcfg
+source archer_rv321_single_cycle_tb.tcl
+close_sim
